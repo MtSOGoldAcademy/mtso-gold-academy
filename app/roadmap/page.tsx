@@ -1,4 +1,6 @@
-Import Head from 'next/head';
+export const metadata = {
+  title: 'خارطة الطريق | أكاديمية MTSO',
+}
 
 export default function Roadmap() {
   const steps = [
@@ -10,9 +12,6 @@ export default function Roadmap() {
 
   return (
     <div style={{ backgroundColor: 'black', color: '#D4AF37', minHeight: '100vh', padding: '40px', fontFamily: 'serif' }}>
-      <Head>
-        <title>خارطة الطريق | أكاديمية MTSO</title>
-      </Head>
       <h1 style={{ textAlign: 'center', fontSize: '40px', marginBottom: '50px' }}>خارطة طريق التداول</h1>
       <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '40px' }}>
         {steps.map((step, index) => (
